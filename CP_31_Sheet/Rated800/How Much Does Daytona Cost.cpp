@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+// In any subaaray of size = 1, the element occurs the maximum number of times in that subarray
+//so if an element exists in the array, it will the majority element in subarray of size = 1 containing that element
 int main() {
     int t;
     cin>>t;
@@ -22,4 +23,3 @@ int main() {
     return 0;
 }
 
-// every element occurs the maximum number of times in a subarray of size = 1, so if a given element k exists in the array, then it is most common in the subarray containaing that element of size=1, [k]

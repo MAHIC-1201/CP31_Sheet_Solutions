@@ -1,6 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+// calcuate the minimum difference between any 2 elements in the array, this is because it will require minimum number of moves to make a[i-1]>a[i]
+// let this minimum difference = x, i.e. a[i]-a[i-1]=x
+// We need to calculate after how many moves does a[i-1]>a[i]
+// Lets say it happens after k moves that a[i]-a[i-1]<=0
+// at that point a[i-1]=a[i-1]+k
+// a[i]=a[i]-k
+//a[i]-a[i-1]-2k<=0
+//x-2k<=0
+//k>=x/2
+//k=x/2+1
 int main() {
     int t;
     cin>>t;
@@ -24,4 +33,3 @@ int main() {
     return 0;
 }
 
-// Your code here

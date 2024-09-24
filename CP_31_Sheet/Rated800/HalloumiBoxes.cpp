@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+// We can always sort any array using any subarray of minimum size=2,
+// we can never sort an unsorted array with a subarray of size=1
 bool is_sorted(vector<long long>&arr){
     for(int i=0;i<arr.size()-1;i++){
         if(arr[i]>arr[i+1]) return false;
@@ -33,4 +35,3 @@ int main() {
     return 0;
 }
 
-// Your code here
